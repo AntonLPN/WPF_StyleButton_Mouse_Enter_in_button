@@ -1,0 +1,132 @@
+﻿<Window x:Class="D_25._11._2020_StyleButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:D_25._11._2020_StyleButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="407" Width="694">
+    <Window.Resources>
+        <Style TargetType="Button"  x:Key="StyleBigGreen">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="25"/>
+                    <Setter Property="ItemsControl.Width" Value="185"/>
+                    <Setter Property="ItemsControl.Height" Value="38" />
+                    <Setter Property="ItemsControl.Foreground" Value="Green"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleSmallGreen">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="12"/>
+                    <Setter Property="ItemsControl.Width" Value="150"/>
+                    <Setter Property="ItemsControl.Height" Value="20" />
+                    <Setter Property="ItemsControl.Foreground" Value="Green"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleBigGreenBold">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="25"/>
+                    <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+                    <Setter Property="ItemsControl.Width" Value="185"/>
+                    <Setter Property="ItemsControl.Height" Value="37" />
+                    <Setter Property="ItemsControl.Foreground" Value="Green"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleSmallGreenBold">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="12"/>
+                    <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+                    <Setter Property="ItemsControl.Width" Value="150"/>
+                    <Setter Property="ItemsControl.Height" Value="20" />
+                    <Setter Property="ItemsControl.Foreground" Value="Green"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!--Красные кнопки-->
+        <Style TargetType="Button"  x:Key="StyleBigRed">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="25"/>
+                    <Setter Property="ItemsControl.Width" Value="185"/>
+                    <Setter Property="ItemsControl.Height" Value="38" />
+                    <Setter Property="ItemsControl.Foreground" Value="red"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleSmallRed">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="12"/>
+                    <Setter Property="ItemsControl.Width" Value="150"/>
+                    <Setter Property="ItemsControl.Height" Value="20" />
+                    <Setter Property="ItemsControl.Foreground" Value="Red"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleBigRedBold">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="25"/>
+                    <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+                    <Setter Property="ItemsControl.Width" Value="185"/>
+                    <Setter Property="ItemsControl.Height" Value="37" />
+                    <Setter Property="ItemsControl.Foreground" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="Button"  x:Key="StyleSmallRedBold">
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.FontSize" Value="12"/>
+                    <Setter Property="ItemsControl.FontWeight" Value="Bold"/>
+                    <Setter Property="ItemsControl.Width" Value="150"/>
+                    <Setter Property="ItemsControl.Height" Value="20" />
+                    <Setter Property="ItemsControl.Foreground" Value="Red"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" x:Name="ButtonBigGreen1" Style="{StaticResource ResourceKey=StyleBigGreen}" Content="Big,green" Margin="0,0,144,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="0" Grid.Row="1" x:Name="ButtonSmallGreen2" Style="{StaticResource ResourceKey=StyleSmallGreen}" Content="Small,green" Margin="0,0,138,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="0" Grid.Row="2" x:Name="ButtonBigGreenBold3" Style="{StaticResource ResourceKey=StyleBigGreenBold}" Content="Big,green,bold" Margin="0,0,133,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="0" Grid.Row="3" x:Name="ButtonSmallGreenBold" Style="{StaticResource ResourceKey=StyleSmallGreenBold}" Content="Small,green,bold" Margin="0,0,133,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+<!--Красные кнопки-->
+        <Button Grid.Column="1" Grid.Row="0" x:Name="ButtonBigRed" Style="{StaticResource ResourceKey=StyleBigRed}" Content="Big,red" Margin="0,0,146,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="1" Grid.Row="1" x:Name="ButtonSmallRed" Style="{StaticResource ResourceKey=StyleSmallRed}" Content="Small,red" Margin="0,0,141,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="1" Grid.Row="2" x:Name="ButtonBigRedBold3" Style="{StaticResource ResourceKey=StyleBigRedBold}" Content="Big,red,bold" Margin="0,0,133,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+        <Button Grid.Column="1" Grid.Row="3" x:Name="ButtonSmallRedBold" Style="{StaticResource ResourceKey=StyleSmallRedBold}" Content="Small,red,bold" Margin="0,0,126,40" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
+
+    </Grid>
+</Window>
